@@ -1,20 +1,27 @@
-# adwaitapod
-![adwaitapod promo image with ipods](https://github.com/D0-0K/adwaitapod/blob/main/Promotional_Images/adwaitapod_Banner.png?raw=true)
-<a href='https://ko-fi.com/dook_' target='_blank'><img height='35' style='border:0px;height:46px;' src='https://storage.ko-fi.com/cdn/brandasset/kofi_s_tag_white.png?' border='0' alt='Buy Me a Coffee at ko-fi.com' />
+# Adwaitapod Focus
 
-Adwaitapod is a modern, feature-rich UI for Apple iPod classic models 5th thru 7th generations. Designed around the GNOME Foundation's [Human Interface Guidelines](https://developer.gnome.org/hig/index.html), adwaitapod aims to deliver a clean, consistant user experience that can be customised to fit your tastes and needs. Available in two variations, classic and simplified, both come in either light or dark mode with extra fonts and wallpapers available.
+Adwaitapod Focus is a pair of 320 × 240 Rockbox themes based on Dook’s Adwaitapod Simplified. Both variants use the same Now Playing layout with their own light or dark menus, icons, and artwork. The screenshots were captured in the Rockbox iPod Classic (`ipod6g`) simulator.
 
-This Ui theme makes use of the Cantarell font, alongside the adwaita icon set. Noto Sans CJK is used to provide CJK font support.
+| | Dark Focus | Light Focus |
+| --- | --- | --- |
+| Playing | ![Dark Focus playing](Screenshots/Focus/dark-playing.png) | ![Light Focus playing](Screenshots/Focus/light-playing.png) |
+| Paused | ![Dark Focus paused](Screenshots/Focus/dark-paused.png) | ![Light Focus paused](Screenshots/Focus/light-paused.png) |
 
- **All extras can be found in the releases section to the side.**
+## Changes from Adwaitapod Simplified
 
- ---
- 
+- Now Playing centers the cover art vertically. The metadata block is centered beside it, with five left-aligned rows at 26-pixel baseline intervals.
+- The track title uses 22-point Cantarell Bold. Album and artist use 20-point Cantarell Regular. The year and codec–bitrate use 18-point Cantarell Regular. The year row shows the first four characters of the date tag.
+- The clock sits at the top. The play/pause status sits beside the battery with the loading spinner immediately to its left during disk activity. The large transport graphics and the footer divider are removed.
+- The footer uses Adwaitapod Classic’s progress bar with elapsed and total time. The bar and thumb are vertically aligned with the time labels. The centered counter shows the current position in the active playlist and reappears after the volume overlay closes.
 
-## Contributing to the Project
+## Install on Rockbox
 
-Adwaitapod itself does not have a massive need for extra hands, however I'm always open to getting feedback from users on features and improvements.
+1. Choose [Dark Focus](adwaitapod_dark_focus) or [Light Focus](adwaitapod_light_focus).
+2. Connect the iPod over USB. Copy the chosen theme’s hidden `.rockbox` folder to the root of the iPod drive and merge it with the existing `.rockbox` folder.
+3. Safely eject the iPod. In Rockbox, open **Settings → Theme Settings → Browse Theme Files** and choose `adwaitapod_dark_focus` or `adwaitapod_light_focus`.
 
-If you happen to be a developer with experience in C and wish to help adwaitapod indirectly, I highly encourage you to consider [contributing to Rockbox itself](https://www.rockbox.org/wiki/ContributingToRockbox). The team of developers on the project is small, and have little free time to work on it. I've made a [list of features](https://d00k.net/wiki/rockbox_advanced/missing_features/) I believe could be added to Rockbox's theming engine in order to improve themes all around, and would help in improving the adwaitapod experience. If you'd like more information about things on this list, send me an [email](https://d00k.net/about/)!
+## Credits
 
-Donating to the Rockbox Project will also help adwaitapod. I donate a chunk of my tips to the project each year, but you can also find a link on the [Rockbox homepage](https://www.rockbox.org/) to do so directly.
+Focus adapts Dook’s Adwaitapod Simplified and Classic skins. The upstream project retains the original themes. [Adwaitapod by Dook](https://github.com/D0-0K/adwaitapod)
+
+See [LICENSE](adwaitapod_dark_focus/LICENSE) and [Licenses](adwaitapod_dark_focus/Licenses) for the upstream license files. Individual skins carry their original CC BY-SA attribution.
