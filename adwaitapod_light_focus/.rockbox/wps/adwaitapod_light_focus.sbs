@@ -335,8 +335,8 @@
 %Vl(AlbumArtConfig,46,111,75,20,4)%VB%alRounded
 %Vl(AlbumArtButtons,164,69,16,16,-)%?if(%LR,=,2)<%?Lc<%xd(RadioButton,2)|%xd(RadioButton,1)>>
 %Vl(AlbumArtConfig,193,111,75,20,4)%VB%alSquared
-%Vl(AlbumArtConfig,40,139,90,68,-)%VB%?if(%St(wps), =, awaitapod_light_focus)<%xd(AlbumArtConfig,3)|%xd(AlbumArtConfig,1)>
-%Vl(AlbumArtConfig,190,139,90,68,-)%VB%?if(%St(wps), =, awaitapod_light_focus)<%xd(AlbumArtConfig,4)|%xd(AlbumArtConfig,2)>
+%Vl(AlbumArtConfig,40,139,90,68,-)%VB%?if(%St(wps), =, adwaitapod_light_focus)<%xd(AlbumArtConfig,3)|%xd(AlbumArtConfig,1)>
+%Vl(AlbumArtConfig,190,139,90,68,-)%VB%?if(%St(wps), =, adwaitapod_light_focus)<%xd(AlbumArtConfig,4)|%xd(AlbumArtConfig,2)>
 #
 %Vl(WPSLockscreenConfig,12,35,-12,20,3)%VB%al%Sx(While Playing Screen) %Sx(Settings)
 %Vl(WPSLockscreenConfig,12,57,-4,20,4)%VB%Vf(6b6d6b)%alShow a Lockscreen in players when on hold.
@@ -350,7 +350,7 @@
 %Vl(WPSLockscreenConfig,191,108,110,20,4)%VB%alNo Lockscreen
 %Vl(WPSLockscreenConfig,40,139,90,68,-)%VB%xd(WPSLockscreenStyle,1)
 %Vl(WPSLockscreenConfig,190,139,90,68,-)%VB
-%?if(%St(wps), =, awaitapod_light_focus)<%?if(%St(volume display), =, graphic)<%xd(WPSLockscreenStyle,4)|%xd(WPSLockscreenStyle,5)>|%?if(%St(volume display), =, graphic)<%xd(WPSLockscreenStyle,2)|%xd(WPSLockscreenStyle,3)>>
+%?if(%St(wps), =, adwaitapod_light_focus)<%?if(%St(volume display), =, graphic)<%xd(WPSLockscreenStyle,4)|%xd(WPSLockscreenStyle,5)>|%?if(%St(volume display), =, graphic)<%xd(WPSLockscreenStyle,2)|%xd(WPSLockscreenStyle,3)>>
 #
 %Vl(LockscreenConfig,12,35,-12,20,3)%VB%al%Sx(Backlight on Hold)/Lockscreen Style
 %Vl(LockscreenConfig,12,57,-12,22,4)%VB%Vf(6b6d6b)%alUse a Lockscreen or Always on Display

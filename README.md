@@ -1,6 +1,6 @@
-# Awaitapod Focus
+# Adwaitapod Focus
 
-Awaitapod Focus is a pair of 320 × 240 Rockbox themes based on Dook’s Adwaitapod Simplified. Both variants use the same Now Playing layout with their own light or dark menus, icons, and artwork. The screenshots were captured in the Rockbox iPod Classic (`ipod6g`) simulator.
+Adwaitapod Focus is a pair of 320 × 240 Rockbox themes based on Dook’s Adwaitapod Simplified. Both variants use the same Now Playing layout with their own light or dark menus, icons, and artwork. The screenshots were captured in the Rockbox iPod Classic (`ipod6g`) simulator.
 
 | | Dark Focus | Light Focus |
 | --- | --- | --- |
@@ -16,12 +16,12 @@ Awaitapod Focus is a pair of 320 × 240 Rockbox themes based on Dook’s Adwaita
 
 ## Install on Rockbox
 
-1. Choose [Dark Focus](awaitapod_dark_focus) or [Light Focus](awaitapod_light_focus).
+1. Choose [Dark Focus](adwaitapod_dark_focus) or [Light Focus](adwaitapod_light_focus).
 2. Connect the iPod over USB. Copy the chosen theme’s hidden `.rockbox` folder to the root of the iPod drive and merge it with the existing `.rockbox` folder.
-3. Safely eject the iPod. In Rockbox, open **Settings → Theme Settings → Browse Theme Files** and choose `awaitapod_dark_focus` or `awaitapod_light_focus`.
+3. Safely eject the iPod. In Rockbox, open **Settings → Theme Settings → Browse Theme Files** and choose `adwaitapod_dark_focus` or `adwaitapod_light_focus`.
 
 ## Credits
 
 Focus adapts Dook’s Adwaitapod Simplified and Classic skins. The upstream project retains the original themes. [Adwaitapod by Dook](https://github.com/D0-0K/adwaitapod)
 
-See [LICENSE](awaitapod_dark_focus/LICENSE) and [Licenses](awaitapod_dark_focus/Licenses) for the upstream license files. Individual skins carry their original CC BY-SA attribution.
+See [LICENSE](adwaitapod_dark_focus/LICENSE) and [Licenses](adwaitapod_dark_focus/Licenses) for the upstream license files. Individual skins carry their original CC BY-SA attribution.
