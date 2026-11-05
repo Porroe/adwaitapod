@@ -11,7 +11,7 @@ Adwaitapod Focus is a pair of 320 × 240 Rockbox themes based on Dook’s Adwait
 
 - Now Playing centers the cover art vertically. The metadata block is centered beside it, with five left-aligned rows at 26-pixel baseline intervals.
 - The track title uses 22-point Cantarell Bold. Album and artist use 20-point Cantarell Regular. The year and codec–bitrate use 18-point Cantarell Regular. The year row shows the first four characters of the date tag.
-- The clock sits at the top. The play/pause status sits beside the battery with the loading spinner immediately to its left during disk activity. The large transport graphics and the footer divider are removed.
+- The clock sits at the upper left, vertically aligned with the status icons. The play/pause status sits beside the battery with the loading spinner immediately to its left during disk activity. The large transport graphics and the footer divider are removed.
 - The footer uses Adwaitapod Classic’s progress bar with elapsed and total time. The bar and thumb are vertically aligned with the time labels. The centered counter shows the current position in the active playlist and reappears after the volume overlay closes.
 
 ## Install on Rockbox

@@ -95,7 +95,7 @@
 %?if(%St(battery display), =, graphic)<%?mh<|%?if(%pt, >=, 36000)<%Vd(Playtime6Digits)|%?if(%pt, >=, 3600)<%Vd(Playtime5Digits)|%?if(%pt, >=, 600)<%Vd(Playtime4Digits)|%Vd(Playtime3Digits)>>>>|%?if(%pt, >=, 36000)<%Vd(Playtime6Digits)|%?if(%pt, >=, 3600)<%Vd(Playtime5Digits)|%?if(%pt, >=, 600)<%Vd(Playtime4Digits)|%Vd(Playtime3Digits)>>>>
 #
 #-- Icon Stuff --#
-%Vl(Player,70,0,180,20,4)%ac%?cf<%cH:%cM|%cl:%cM %cP>
+%Vl(Player,4,3,100,20,4)%al%?cf<%cH:%cM|%cl:%cM %cP>
 %Vl(Player,283,4,16,16,-)%xd(PlayIcon,%mp)
 %Vl(Player,303,4,14,16,-)%?bp<%xd(ChargingIcon,%bl)|%xd(BatteryIcon,%bl)>
 #
