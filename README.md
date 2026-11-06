@@ -1,13 +1,22 @@
 # Adwaitapod Focus
 
-Adwaitapod Focus is a pair of 320 × 240 Rockbox themes based on Dook’s Adwaitapod Simplified. Both variants use the same Now Playing layout with their own light or dark menus, icons, and artwork. The screenshots were captured in the Rockbox iPod Classic (`ipod6g`) simulator.
+Adwaitapod Focus offers light and dark Rockbox themes based on Dook’s Adwaitapod Simplified. Each player has a shared Now Playing layout with light and dark palettes, icons, and artwork. The 320 × 240 screenshots below were captured in the Rockbox iPod Classic (`ipod6g`) simulator.
 
 | | Dark Focus | Light Focus |
 | --- | --- | --- |
 | Playing | ![Dark Focus playing](Screenshots/Focus/dark-playing.png) | ![Light Focus playing](Screenshots/Focus/light-playing.png) |
 | Paused | ![Dark Focus paused](Screenshots/Focus/dark-paused.png) | ![Light Focus paused](Screenshots/Focus/light-paused.png) |
 
-## Changes from Adwaitapod Simplified
+## Sansa Fuze
+
+The Sansa Fuze and Fuze v2 variants use a 220 × 176 Now Playing layout with 96 × 96 cover art and compact Cantarell text. Elapsed and total time sit at opposite screen edges, and the progress bar shortens to fit longer timestamps. The playlist counter, shuffle, and repeat indicators sit below the bar. These variants use the standard Rockbox menus with the Focus palette. The screenshots are from the Sansa Fuze simulator.
+
+| | Dark Focus | Light Focus |
+| --- | --- | --- |
+| Playing | ![Dark Focus playing on Sansa Fuze](Screenshots/Fuze/dark-playing.png) | ![Light Focus playing on Sansa Fuze](Screenshots/Fuze/light-playing.png) |
+| Paused | ![Dark Focus paused on Sansa Fuze](Screenshots/Fuze/dark-paused.png) | ![Light Focus paused on Sansa Fuze](Screenshots/Fuze/light-paused.png) |
+
+## iPod Classic changes from Adwaitapod Simplified
 
 - Now Playing centers the cover art vertically. The metadata block is centered beside it, with five left-aligned rows at 26-pixel baseline intervals.
 - The track title uses 22-point Cantarell Bold. Album and artist use 20-point Cantarell Regular. The year and codec–bitrate use 18-point Cantarell Regular. The year row shows the first four characters of the date tag.
@@ -16,9 +25,11 @@ Adwaitapod Focus is a pair of 320 × 240 Rockbox themes based on Dook’s Adwait
 
 ## Install on Rockbox
 
-1. Choose [Dark Focus](adwaitapod_dark_focus) or [Light Focus](adwaitapod_light_focus).
-2. Connect the iPod over USB. Copy the chosen theme’s hidden `.rockbox` folder to the root of the iPod drive and merge it with the existing `.rockbox` folder.
-3. Safely eject the iPod. In Rockbox, open **Settings → Theme Settings → Browse Theme Files** and choose `adwaitapod_dark_focus` or `adwaitapod_light_focus`.
+1. Choose your device’s theme.
+   - iPod Classic · [Dark Focus](adwaitapod_dark_focus) or [Light Focus](adwaitapod_light_focus)
+   - Sansa Fuze or Fuze v2 · [Dark Focus](adwaitapod_dark_focus_fuze) or [Light Focus](adwaitapod_light_focus_fuze)
+2. Connect your player over USB. Copy the chosen theme’s hidden `.rockbox` folder to the root of the player’s drive and merge it with the existing `.rockbox` folder.
+3. Safely eject the player. In Rockbox, open **Settings → Theme Settings → Browse Theme Files** and choose the installed theme. The Sansa Fuze variants end in `_fuze`.
 
 ## Credits
 

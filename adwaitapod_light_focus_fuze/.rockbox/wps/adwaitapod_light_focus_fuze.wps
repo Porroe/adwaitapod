@@ -1,0 +1,89 @@
+# Adwaitapod Focus for the 220 x 176 Sansa Fuze display.
+# Adapted from Dook's Adwaitapod skins, CC BY-SA.
+%wd
+%Fl(3,14-Focus-Fuze-Cantarell-Regular.fnt)
+%Fl(4,16-Focus-Fuze-Cantarell-Bold.fnt)
+%xl(Hold,HoldStatus.bmp,2,1)
+%xl(Sleep,SleepStatus.bmp,2,1)
+%xl(L,LoadingStatus.bmp,12)
+%xl(Play,PlayStatus.bmp,9)
+%xl(Battery,BatteryStatus.bmp,12)
+%xl(Charge,ChargeStatus.bmp,11)
+%xl(Shuffle,ShuffleStatus.bmp,2)
+%xl(Repeat,RepeatStatus.bmp,5)
+%xl(Thumb,PlayerSlider.bmp)
+%xl(Track3,SliderBackdrop3.bmp)
+%xl(Track4,SliderBackdrop4.bmp)
+%xl(Track5,SliderBackdrop5.bmp)
+%xl(Track6,SliderBackdrop.bmp)
+%xl(Fallback,PlayerFallback.bmp)
+%xl(CornerTL,WpsTL.bmp)
+%xl(CornerTR,WpsTR.bmp,91,0)
+%xl(CornerBL,WpsBL.bmp,0,91)
+%xl(CornerBR,WpsBR.bmp,91,91)
+%xl(VolumeBackdrop,VolumeBackdrop.bmp)
+%xl(VolumeIcons,VolumePromptIcons.bmp,4)
+%xl(VolumeTrack,VolumeSliderBackdrop.bmp)
+%xl(VolumeThumb,VolumeSliderEnd.bmp)
+
+# Album art and viewport dispatch
+%V(0,0,-,-,-)%VB
+%Cl(8,31,96,96)%Cd
+%V(0,0,-,-,-)
+%Vd(Header)%Vd(Art)%Vd(Metadata)
+%?mv(1.2)<%Vd(Volume)|%Vd(Footer)%?if(%pt, >=, 36000)<%Vd(Timing6)|%?if(%pt, >=, 3600)<%Vd(Timing5)|%?if(%pt, >=, 600)<%Vd(Timing4)|%Vd(Timing3)>>>>
+
+# Clock and status icons
+%Vl(Header,5,4,100,18,4)%al%?cf<%cH:%cM|%cl:%cM %cP>
+%Vl(Header,141,4,16,16,-)%?mh<%xd(Hold,%mh)|%xd(Sleep,%bs)>
+%Vl(Header,161,4,16,16,-)
+%?lh<%t(0.1)%xd(La);%t(0.1)%xd(Lb);%t(0.1)%xd(Lc);%t(0.1)%xd(Ld);%t(0.1)%xd(Le);%t(0.1)%xd(Lf);%t(0.1)%xd(Lg);%t(0.1)%xd(Lh);%t(0.1)%xd(Li);%t(0.1)%xd(Lj);%t(0.1)%xd(Lk);%t(0.1)%xd(Ll)>
+%Vl(Header,181,4,16,16,-)%xd(Play,%mp)
+%Vl(Header,201,4,14,16,-)%?bp<%xd(Charge,%bl)|%xd(Battery,%bl)>
+
+%Vl(Art,8,31,96,96,-)
+%?C<%xd(CornerTL)%xd(CornerTR)%xd(CornerBL)%xd(CornerBR)|%xd(Fallback)>
+
+# Evenly spaced metadata rows
+%Vl(Metadata,112,34,102,18,4)
+%s%al%?mv(1.2)<|>%?it<%it|%fn>
+%Vl(Metadata,112,52,102,18,3)
+%s%al%?mv(1.2)<|>%id
+%Vl(Metadata,112,70,102,18,3)
+%s%al%?mv(1.2)<|>%ia
+%Vl(Metadata,112,88,102,18,3)%Vf(6B6D6B)
+%al%?mv(1.2)<|>%ss(0,4,%iy)
+%Vl(Metadata,112,106,102,18,3)%Vf(6B6D6B)
+%s%al%?mv(1.2)<|>%fc%?fb< - %fb kbps>
+
+# Playback footer
+%Vl(Timing3,2,135,27,18,3)%al%pc
+%Vl(Timing3,191,135,27,18,3)%ar%pt
+%Vl(Timing3,32,139,156,10,-)
+%pb(0,0,156,10,Slider.bmp,slider,Thumb,backdrop,Track3)
+%Vl(Timing4,2,135,35,18,3)%al%pc
+%Vl(Timing4,183,135,35,18,3)%ar%pt
+%Vl(Timing4,40,139,140,10,-)
+%pb(0,0,140,10,Slider.bmp,slider,Thumb,backdrop,Track4)
+%Vl(Timing5,2,135,46,18,3)%al%pc
+%Vl(Timing5,172,135,46,18,3)%ar%pt
+%Vl(Timing5,51,139,118,10,-)
+%pb(0,0,118,10,Slider.bmp,slider,Thumb,backdrop,Track5)
+%Vl(Timing6,2,135,54,18,3)%al%pc
+%Vl(Timing6,164,135,54,18,3)%ar%pt
+%Vl(Timing6,59,139,102,10,-)
+%pb(0,0,102,10,Slider.bmp,slider,Thumb,backdrop,Track6)
+%Vl(Footer,6,156,16,14,-)%xd(Shuffle,%ps)
+%Vl(Footer,198,155,17,16,-)%xd(Repeat,%mm)
+%Vl(Footer,28,154,164,20,4)%Vf(6B6D6B)
+%?if(%pe, !=, 1)<%ac%pp %Sx(of) %pe>
+
+# The playback footer reappears as a group when this overlay closes.
+%Vl(Volume,20,131,180,45,-)%xd(VolumeBackdrop)
+%Vl(Volume,34,143,24,21,-)
+%?if(%pv, =, -90)<%xd(VolumeIcons,1)>
+%?and(%if(%pv, <=, -60),%if(%pv, >, -90))<%xd(VolumeIcons,2)>
+%?and(%if(%pv, <=, -30),%if(%pv, >, -60))<%xd(VolumeIcons,3)>
+%?if(%pv, >, -30)<%xd(VolumeIcons,4)>
+%Vl(Volume,66,151,117,5,-)
+%?if(%pv, =, -90)<%xd(VolumeTrack)|%pv(0,0,117,5,VolumeSlider.bmp,slider,VolumeThumb,backdrop,VolumeTrack)>
